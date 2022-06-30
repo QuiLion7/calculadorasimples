@@ -10,11 +10,12 @@ buttons.forEach((btn) => {
     ) {
       insert(value);
     } else if (value === ".") {
-      if (currentOperandTextElement.innerHTML.includes(".")) {
+      /*if (currentOperandTextElement.innerHTML.includes(".")) {
         return;
       } else {
         insert(value);
-      }
+      }*/
+      insert(value);
     } else if (value === "AC") {
       currentOperandTextElement.innerHTML = "";
     } else if (value === "DEL") {
